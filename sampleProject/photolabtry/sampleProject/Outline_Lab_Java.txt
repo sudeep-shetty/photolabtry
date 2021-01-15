@@ -1,0 +1,27 @@
+Input:
+1. Make a Reservation
+2. Collect Results
+3. Check-In
+4. Cancel Reservation
+
+First Screen(In Main)
+Repeatedly ask for a valid input
+
+Make a Reservation:
+Pick a date(max 3 days in advance)
+Show available slots
+Display Available slots
+after selection, mark the slot Unavailable
+Generate day+slotNumber combination code
+
+Check-In:
+If Check-In time greater than half an hour before check-In time, reject
+Compare Code (day+slotNumber)
+add to results list day+slotNumber after 24 hours(meaning: make it available at that time)
+
+Collect results:
+Enter day+slotNumber code. If exists in results list, give results
+
+Cancel reservation:
+No cancelation when the reservation is only 5 slots away (day+(slotNumber-5))
+if cancelled, remove from reservation list free up slot, also ask for confirmation
